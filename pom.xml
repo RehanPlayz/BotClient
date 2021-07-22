@@ -50,7 +50,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <log4j.version>2.13.3</log4j.version>
-        <jline.version>3.14.1</jline.version>
+        <jline.version>3.20.0</jline.version>
         <jackson.version>2.11.0</jackson.version>
     </properties>
 
@@ -201,7 +201,7 @@
                 </executions>
                 <configuration>
                     <transformers>
-                        <transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer" />
+                        <transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer"/>
                     </transformers>
                     <dependencyReducedPomLocation>${project.build.directory}/dependency-reduced-pom.xml</dependencyReducedPomLocation>
                     <filters>
@@ -244,7 +244,7 @@
                     <excludeProperties>
                         <excludeProperty>git.user.*</excludeProperty>
                     </excludeProperties>
-                    <includeOnlyProperties />
+                    <includeOnlyProperties/>
                     <useNativeGit>false</useNativeGit>
                     <abbrevLength>7</abbrevLength>
                     <commitIdGenerationMode>flat</commitIdGenerationMode>
